@@ -6,10 +6,13 @@
         <meta name="description" content="this is home page">
         <title>homepage</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
  </head>
-    <body>
+    <body class="page1">
         <header>
             <img src="logo.jpg" alt="there is logo picture" class="logo">
+            <input type="checkbox" id="menu-bar">
+            <label for="menu-bar">Menu</label>
         <div class="navbar">
     <nav>      
     <ul>
@@ -27,21 +30,22 @@
     </nav>
     </div>
     </header>
-    <main>
+    <main class="main">
  <h1 class="h1page1">welcome!!!</h1>
- <h2 class="h2page1">This is simren liyu cake</h2>
- <h3 class="h3page3">we made your celebration special </h3>
- <div class="button">
-    <button>ORDER NOW</button>
+ <h2 class="hpage1">This is simren liyu cake</h2>
+ <h3 class="hpage1">we made your celebration special </h3>
+ <div>
+    <button class="button" onclick="location.href='order.html'">ORDER NOW</button>
  </div>
    </main>
-   <footer>
-    <div class="footer">
+   <footer class="footer">
+    <div class="social-media">
         <a href="#" class="fa fa-facebook">simrencake</a>
         <a href="#" class="fa fa-twitter">@simrencake</a>
         <a href="#" class="fa fa-telegram">simrenliyucake</a>
-        <a href="#" class="fa fa-instagram">simrenliyucake</a>
-<p class="copyright">copy right &#169;2022</p>
+        <a href="#" class="fa fa-instagram" id="instagram">simrenliyucake</a>
+       </div>
+<span class="copyright">copy right &#169;2022</span>
 
     </div>
    </footer>
