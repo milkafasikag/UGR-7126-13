@@ -1,0 +1,610 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+}
+.page1{
+        background-image: url(cake1.jpg);
+        background-repeat:no-repeat;
+       background-attachment:fixed;
+       background-size:cover;
+        
+}
+.logo{
+      
+      height: 100px;
+      width: 200px;
+      border-radius: 100px;
+      }
+header{
+      position: sticky;
+      top: 0; left: 0; right: 0;
+      background-color:rgb(92, 75, 75);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+}
+
+.navbar nav ul{
+      list-style: none;
+      display: block;
+      margin-top:20px;
+      margin-right: 500px;
+      }
+.navbar nav ul li{
+      position: relative;
+      float: left;
+      margin-left: 20px;
+}
+.navbar nav ul li a{
+      font-size: 20px;
+      padding: 20px;
+      color: white;
+      font-weight: bolder;
+      text-decoration: none;
+      display: block;}
+.navbar nav ul li a:hover{
+      background-color: rgb(221, 37, 37);
+      color:white
+
+}
+.navbar nav ul li ul{
+      position: absolute;
+      left: 0;
+      width: 300px;
+      margin-top: -8px;
+      background-color: black;
+      display: none;
+}
+.navbar nav ul li ul a{
+      font-size: 20px;
+}
+.navbar nav ul li ul li{
+      width: 100%;
+      border-top: 1px solid black;
+
+}
+.navbar nav ul li:focus-within >ul,
+.navbar nav ul li:hover >ul{
+      display: initial;
+}
+.button{
+      color: rgb(15, 16, 16);
+      padding: 30px 30px;
+      border-radius: 40px;
+      font-size: 30px;
+      display: inline-block;
+      margin-top: 40px;
+      border-color: rgb(36, 34, 34);
+      font-weight: bolder;
+     background-color:rgb(54, 162, 72);
+      margin-left: 350px;
+       cursor: pointer;
+       
+
+}
+.button:hover{
+      background-color: rgb(189, 30, 56);
+      opacity: 0.9;
+      cursor: pointer;
+      box-shadow: 25px 25px 15px black;
+
+
+}
+#menu-bar{
+      display:none;
+}
+header label{
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
+      margin-left: 20px;
+      display: none;
+
+}
+@media(max-width:991px){
+      header{
+            padding: 20px;
+      }
+    header label{
+      display: initial;
+    } 
+    header .navbar nav{
+      position: absolute;
+      top: 100%;left: 0;
+      display:none;
+    }
+    header .navbar nav ul li{
+      width: 100%;
+      background-color: rgb(57, 72, 107);
+      margin-top: -20px;
+    }
+    header .navbar ul li ul{
+      position: relative;
+      width: 100%;
+    }
+    .navbar ul li ul li{
+      background-color: rgb(81, 95, 117);
+    }
+    #menu-bar:checked ~  .navbar nav{ 
+      display: initial;
+    }
+    .navbar nav ul li a:hover{
+      background-color: rgb(23, 15, 15);
+      color:white
+}
+}
+main{
+      margin-top: 80px;
+}
+.footer{
+      margin-top: 100px;
+      padding: 25px 10px;
+      background-color: rgb(32, 29, 29);
+
+}
+
+.social-media {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      
+
+}
+.social-media a{
+      color: rgba(69, 128, 245, 0.879);
+      font-size: 38px;
+}
+#instagram{
+      color: rgb(227, 66, 66);
+}
+
+.copyright{
+      float: right;
+      font-size: 25px;
+      color: white;
+      padding: 0px 50px;
+      background-color: rgb(38, 33, 33);
+      
+}
+ .h1page1{
+      font-size:50px;
+      margin-left: 400px;
+      font-weight: bolder;
+      color: rgba(23, 22, 23, 0.912);
+
+}
+.hpage1{
+      margin-left: 200px;
+      font-size: 26px;
+      font-style: italic;
+      color: rgb(18, 19, 18);
+      font-weight: bolder;
+      
+}
+
+.container{
+      display: flex;
+      flex-direction: row;
+       width: 100%;
+       flex-wrap: wrap;
+       margin-left:10px ;
+       background-color: rgb(228, 235, 240);
+      
+}
+.order{
+      background-color:rgb(92, 75, 75) ;
+}
+
+.i{
+      width: 420px;
+      height: 85%;
+      border-style: solid;
+
+}
+.img{
+      display: block;
+      flex-basis: 100%;
+      
+}
+.pr{
+      font-weight: bolder;
+      font-size: 20px;
+      font-style: oblique;
+}
+ table{
+      width: 100%;
+     border-collapse: collapse;
+}
+.table tr th{
+      background-color: rgb(158, 194, 86);
+      font-size: 25px;
+      font-family: arial;
+      vertical-align: top;
+      padding: 20px;
+      border: 1px solid black;
+}
+.table tr td{
+      font-size: 23px;
+      text-align: center;
+      border: 1px solid black;
+      background-color:darksalmon
+      
+
+}
+.ourstorybody{
+      background-image: url(cake1.jpg);
+}
+
+  @media only screen and (min-width:640px){
+      .img{
+            flex-basis: 33%;
+      }
+}
+@media only screen and(min-width:960px){
+      .img{
+            flex-basis: 33.33%;
+      }
+}
+@media only screen and(min-width:1280px){
+      .img{flex-basis: 25%;
+ }
+}
+  .myvideo{ 
+      
+          height: auto;
+          max-width: 80%;
+          border-style:dotted;
+          margin-left: 30px;
+          margin-top: 60px;
+       }
+      .myaudio{
+            height:auto;
+            background-color:rgb(98, 91, 99);
+            max-width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+            border-radius: 40px;
+     }
+      .certeficates{
+            display: flex;
+            flex-direction: row;
+             width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: rgb(65, 71, 63)
+       }
+      .achivementbody{
+            background-color: rgb(211, 197, 166);
+      }
+      @media screen and (min-width: 601px) {
+            .ourstory {
+              font-size: 25px;
+              margin-left: 20px;
+              font-weight: bold;
+        }
+          span{
+            color: brown;
+           font-weight: bold;
+            font-style: italic;
+          }
+          .careers{
+            font-size: 23px;
+              margin-left: 50px;
+              font-weight: bold;
+          }
+          .p7{
+            margin-top: 30px;
+            font-style: italic;
+            color: blue;
+            font-weight: bolder;
+      }
+          caption{
+            font-size: 20px;
+            color: darkslategrey;
+            font-weight: bolder;
+             font-family: arial;
+            font-size: 25px; 
+            margin: 20px 30px;
+      }
+             .page5 {
+                  font-size: 25px;
+                  margin-left: 20px; 
+                  background-color: rgb(236, 201, 159);
+                  margin: 15px 20px; 
+            }
+           .h1page2{
+            margin-left: 20px;
+            font-weight: bolder;
+            font-family: arial;
+            color: rgb(212, 208, 226);
+           }
+            .contactus{
+                  font-size: 35px;
+                  font-weight: bold;
+                   margin-top: 350px;
+                   margin-left: 30px;
+            }
+            .h1page6{
+                  margin-left: 30px;
+            }
+      
+            .col-1 , .col-2{
+                  font-weight: bolder;
+            } 
+            .social-media{
+                  display: flex;
+                  flex-wrap: wrap;
+                  background-color: black;
+       }
+         }
+      
+  @media screen and (max-width: 600px) {
+            .ourstory{
+              font-size: 20px;
+              margin-left: 20px;
+              font-weight: bold;
+              margin-top: 40px;
+       }
+            span{
+                  color: brown;
+                  font-weight: bold;
+                  font-style: italic;
+             }
+            .careers{
+                  font-size: 22px;
+                  margin-left: 70px;
+                  font-weight: bold;
+                   }
+            
+             .p7{
+                  margin-top: 30px;
+                  font-style: italic;
+                  color: blue;
+                  font-weight: bold;
+                   }
+            .h1page2{
+                   margin-left: 20px;
+                   font-weight: bolder;
+                   font-family: arial;
+                   color: rgb(224, 222, 232);
+              }  
+       
+              caption{
+            font-size: 20px;
+            margin-top: 20px;
+            color: darkslategrey;
+            font-weight: bolder; font-family: arial;
+      }
+      .h1page1 {
+            font-size: 40px;
+            margin-left: 20px;}
+
+      .hpage1{ 
+            font-size: 20px;
+            margin:5px 10px;
+          }
+      .page5 {
+             font-size: 22px;
+             margin-left: 20px;
+             background-color: rgb(236, 201, 159);
+             margin: 10px 20px ;
+}
+.button{
+      margin-left: 10px;
+      padding: 20px 20px;
+      font-size: 20px;
+      font-weight: bolder;
+      margin-top: 90px;
+}
+.social-media a{
+      font-size: 30px; 
+}
+
+.social-media{
+       display: flex;
+       flex-wrap: wrap;
+       background-color: black;
+      }
+      .contactus{
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 150px;
+            margin-left: 30px;
+      }
+      .footer{
+            margin-top: 260px;
+      }
+      .h1page6{
+            margin-left: 30px;
+      }
+           }
+
+      input[type=text], textarea{
+          width: 100%;
+          padding: 20px 10px;
+          border: 1px solid rgb(20, 17, 17);
+          border-radius: 4px;
+          box-sizing: border-box;
+          resize: vertical;
+          margin-top: 30px;
+ }
+     label {
+      padding: 12px 12px 12px 12px;
+      display: inline-block;
+      margin-left: 20px;
+      font-size: 25px;
+      font-weight: bold;
+ }
+    input[type=submit] {
+      background-color: #5a50b0;
+      color: rgb(236, 213, 213);
+      font-weight: bolder;
+      padding: 20px 20px;
+      font-size: 25px;
+      border: 1px solid blue;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right; 
+   }
+        .col-1 {
+            float: left;
+            width: 20%;
+            margin-top: 6px;
+        }
+         .col-2 {
+          float: left;
+          width: 75%;
+          margin-top: 6px;
+        }
+        .contactbody{
+            background-color: rgb(146, 160, 155);
+        }
+       @media screen and (max-width: 600px) {
+          .col-1, .col-2, input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+          }
+        }
+        .active{
+            background-color: rgb(190, 19, 19);
+            box-shadow: inset;
+        }
+        @media only screen and ( max-width:1368px) and (orientation:landscape){
+        .contactus{
+                  margin-top: 720px;
+             }
+            .p7{
+                  margin-bottom: 100px;
+                  margin-top: 100px;
+       }
+            .footer{
+                  margin-top: 400px;
+            }
+      }
+      
+  @media all and (min-width:712px) and (max-width:1290px){
+            .footer{
+                  margin-top: 300px;
+                  padding: 50px 40px;
+            }
+            .button{
+                padding: 40px 40px;
+                margin-top: 200px;
+                margin-left: 200px;
+                 font-size: 40px;
+            }
+            .h1page1{
+                  margin-top: 50px;
+                  margin-left: 200px;
+             }
+             
+          .ourstory{
+                        margin-top: 90px;
+                        font-size: 30px;
+                      }
+                   .myvideo{
+                        margin-top: 60px;
+                  }
+                   .p7{
+                        margin-top: 100px;
+                        font-size: 35px;
+                        margin-bottom:100px}
+           .certeficates{
+                margin-top: 200px;
+                 width: 100%;
+            }
+          .contactus{
+              margin-top: 880px;
+             }
+          .h1page6{
+                  margin-top: 50px;
+                  margin-bottom: 50px;
+                  margin-left: 30px;
+              }
+          }
+        
+       @media all and (min-width:200px) and (max-width:330px){
+            .logo{
+                  width: 100px;
+                  height: 50px; }
+       .copyright , .social-media a{
+                        font-size: 15px;
+            }
+       }
+        @media all and (min-width:600px) and (max-width:712px){
+            .footer{
+                  margin-top: 320px;
+                  padding: 40px 40px;}
+             .h1page1{
+                        margin-top: 150px;
+                        font-size: 50px;
+            }
+               }
+            @media all and (min-width:1024px) and (max-width:1366px){
+            
+            .footer{
+                  padding: 50px 40px;
+            }
+                         
+            .h1page1{
+                        margin-top: 100px;
+                        margin-left: 200px;
+                        font-size:60px ;
+                   }
+       .navbar nav ul{
+                        list-style: none;
+                        display: block;
+                        margin-top:20px;
+                        margin-right: 200px;
+                        }
+                        
+      .certeficates{
+         margin-top: 200px;
+           width: 100%;
+       } 
+      }
+       
+       
+      
+
+
+
+
+                        
+                         
+                  
+                  
+        
+        
+          
+      
+      
+        
+        
+  
+        
+      
+        
+        
+      
+        
+  
+  
+      
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
